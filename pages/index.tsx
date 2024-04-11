@@ -38,12 +38,12 @@ export default function Home() {
 
     try {
       const response = await axios.post(
-        `https://api-s2.wella.professionalstore.com/rest/v2/wellaUS/users?lang=en`,
+        `/api/rest/v2/wellaUS/users?lang=en`,
         formData,
         {
           headers: {
             // pune token-ul nou aici
-            Authorization: "Bearer IFyX-g1GEAgzx2nZ3yH9Y-GNcFs",
+            Authorization: "Bearer 00OMmdRbJFSnY7-EH7q4U0yU4JM",
             Channel: "WEBSITE",
           },
         }
