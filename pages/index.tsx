@@ -37,17 +37,13 @@ export default function Home() {
     formData.append("attachment", file as Blob);
 
     try {
-      const response = await axios.post(
-        `/api/rest/v2/wellaUS/users?lang=en`,
-        formData,
-        {
-          headers: {
-            // pune token-ul nou aici
-            Authorization: "Bearer 00OMmdRbJFSnY7-EH7q4U0yU4JM",
-            Channel: "WEBSITE",
-          },
-        }
-      );
+      const response = await axios.post(`/api/register`, formData, {
+        headers: {
+          // pune token-ul nou aici
+          Authorization: "Bearer aZyP3FvqtUt4IcESFsraPtl29uU",
+          Channel: "WEBSITE",
+        },
+      });
 
       console.log(response.data);
     } catch (error) {
